@@ -3,7 +3,7 @@
 import java.io.*;
 import java.util.*;
 
-class day7_java_loops_2{
+public class day7_java_loops_2{
     public static void main(String []argh){
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();
