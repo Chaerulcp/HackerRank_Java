@@ -1,0 +1,32 @@
+// java 15
+
+import java.io.*;
+import java.util.*;
+import java.io.*;
+import java.math.*;
+import java.util.regex.*;
+
+class Arithmetic{
+    public int add(int a, int b){
+        int sum = a + b; 
+        return sum;
+    }
+}
+
+class Adder extends Arithmetic{  
+    public int callAdd(int a, int b){
+        return add(a, b);
+    }
+}
+
+public class day44_java_inheritance_II {
+    public static void main(String []args){
+        
+        Adder a = new Adder();
+        
+        System.out.println("My superclass is: " + a.getClass().getSuperclass().getName());    
+        
+    
+        System.out.print(a.add(10,32) + " " + a.add(10,3) + " " + a.add(10,10) + "\n");
+     }
+}
